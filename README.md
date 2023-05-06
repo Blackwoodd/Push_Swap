@@ -15,4 +15,4 @@ Instruction for use :
 FOR USE BONUS
 
 - make bonus
-- ./push_swap 2 6 0 1  ./checker 2 6 0 1
+- ./push_swap 2 6 0 1  | ./checker 2 6 0 1
