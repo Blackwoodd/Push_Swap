@@ -31,14 +31,19 @@ CFLAGS		= -Wall -Wextra -Werror
 all		:	$(NAME)
 
 $(NAME)		:	$(OBJS)
-		  		@make --no-print-directory -C ft_printf/
+				@echo "\033[0;33mCompilation...\033[0m"
 		  		$(CC) $(CFLAGS) $(OBJS) $(LIB) -o $(NAME)
+				@echo "\033[0;32mCompilation : OK.\033[0m"
 
 bonus		:	re $(OBJS_BONUS)
+				@echo "\033[0;33mCompilation Bonus...\033[0m"
 		  		$(CC) $(CFlAGS) $(OBJS_BONUS) $(LIB) -o $(NAME_BONUS)
+				@echo "\033[0;32mCompilation Bonus : OK\033[0m"
 
 clean		:
+				@echo "\033[0;32mClean...\033[0m"
 				$(RM) $(OBJS) $(OBJS_BONUS)
+				@echo "\033[0;32mClean : OK.\033[0m"
 
 fclean		:	clean
 				$(RM) $(NAME)
